@@ -72,4 +72,13 @@ You can view the live demo of the project [here](https://to-do-ssg.vercel.app/).
 - Tasks are saved as a JSON string in localStorage and retrieved when the page loads.
   
 
+## Connect with Me
+
+Feel free to reach out and connect with me on my social profiles:
+
+- [GitHub](https://github.com/SurajGharpankar28)
+- [LinkedIn](https://www.linkedin.com/in/surajgharpankar/)
+- [Twitter](https://x.com/surajgharpankar)
+
+
 ---

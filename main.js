@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const todoForm = document.getElementById("todoForm");
   const inputValue = document.getElementById("inputValue");
   const mainTodoElem = document.querySelector(".todo-lists-elem");
+  const itemError = document.getElementById("itemError");
+
   let localTodoList = [];
 
   const addTodoItem = (e) => {
@@ -19,15 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
       divElement.innerHTML = `
           <div class="card-body d-flex justify-content-between align-items-center">
             <span>${todoListValue}</span>
-            <button class="btn btn-danger btn-sm"><i class="bi bi-trash deleteBtn"></i></button>
+            <i class="btn btn-danger btn-sm bi bi-trash deleteBtn"></i>
           </div>
         `;
 
+      itemError.innerText = "";
       mainTodoElem.append(divElement); // Append the new item to the list container
       inputValue.value = ""; // Clear the input field
 
       // Save the updated list to local storage as a JSON string
       localStorage.setItem("TodoList", JSON.stringify(localTodoList));
+    } else {
+      itemError.innerHTML = `<span class="error">Item already exist</span>`;
     }
     console.log(localTodoList);
   };
@@ -55,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     divElement.innerHTML = `
         <div class="card-body d-flex justify-content-between align-items-center">
           <span>${todo}</span>
-          <button class="btn btn-danger btn-sm deleteBtn">Delete</button>
+            <i class="btn btn-danger btn-sm bi bi-trash deleteBtn"></i>
         </div>
       `;
 

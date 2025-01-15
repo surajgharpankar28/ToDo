@@ -26,12 +26,14 @@
             <div class="col-md-8 col-lg-6">
                 <!-- Todo Input Form -->
                 <form id="todoForm" class="mb-4">
-                    <div class="input-group shadow">
-                        <input type="text" id="inputValue" class="form-control" placeholder="Enter a new task"
-                            required />
-                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    <div class="input-group rounded-pill shadow-lg overflow-hidden">
+                        <input type="text" id="inputValue" class="form-control border-0 rounded-pill p-3"
+                            placeholder="Enter a new task" required />
+                        <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">Add Task</button>
                     </div>
                 </form>
+                <p id="itemError"></p>
+
 
                 <!-- Todo List Section -->
                 <section class="todo-lists-elem"></section>

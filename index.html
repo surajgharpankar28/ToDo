@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Professional To-Do App</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!--  Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>ToDo App</h1>
-    <script src="script.js"></script>
+    <div class="container py-5">
+        <!-- Header Section -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-primary">My To-Do List</h1>
+            <p class="lead text-muted">Organize your tasks efficiently with this simple and elegant To-Do App.</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <!-- Todo Input Form -->
+                <form id="todoForm" class="mb-4">
+                    <div class="input-group shadow">
+                        <input type="text" id="inputValue" class="form-control" placeholder="Enter a new task"
+                            required />
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </div>
+                </form>
+
+                <!-- Todo List Section -->
+                <section class="todo-lists-elem"></section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-muted">
+        <p>
+            &copy; 2025 To-Do App | Built with ❤️ and Bootstrap by <span style="font-weight: bold;">Suraj
+                Gharpankar</span>
+        </p>
+        <p>
+            <a href="https://github.com/surajgharpankar28" target="_blank"
+                class="text-decoration-none text-primary me-3">
+                <i class="bi bi-github icon"></i>
+            </a>
+            <a href="https://x.com/surajgharpankar" target="_blank" class="text-decoration-none text-primary me-3">
+                <i class="bi bi-twitter icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/surajgharpankar" target="_blank"
+                class="text-decoration-none text-primary">
+                <i class="bi bi-linkedin icon"></i>
+            </a>
+        </p>
+    </footer>
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom script -->
+    <script src="main.js"></script>
 </body>
+
 </html>

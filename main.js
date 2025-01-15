@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Save the updated list to local storage as a JSON string
       localStorage.setItem("TodoList", JSON.stringify(localTodoList));
     } else {
-      itemError.innerHTML = `<span class="error">Item already exist</span>`;
+      itemError.innerHTML = `<span>Item already exist</span>`;
     }
     console.log(localTodoList);
   };

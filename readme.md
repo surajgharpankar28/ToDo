@@ -45,19 +45,13 @@ You can view the live demo of the project [here](https://to-do-ssg.vercel.app/).
    cd ToDo
    ```
 
-3. **Install dependencies (if any):**
 
-   This project uses Bootstrap 5, so you may need to install Bootstrap locally:
 
-   ```bash
-   npm install bootstrap
-   ```
-
-4. **Open the `index.html` file:**
+3. **Open the `index.html` file:**
 
    After setting up, open the `index.html` file in your browser to view the application.
 
-5. **Optional (Run with live server):**
+4. **Optional (Run with live server):**
 
    You can run the project with a live server for automatic reloading. You can use extensions like "Live Server" in VS Code or run it with a local server setup.
 
